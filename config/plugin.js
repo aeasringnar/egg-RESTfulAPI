@@ -29,3 +29,8 @@ exports.swagger2 = {
   enable: true,
   package: 'egg-swagger2',
 };
+
+exports.io = {
+  enable: true,
+  package: 'egg-socket.io',
+};

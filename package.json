@@ -11,6 +11,7 @@
     "egg-jwt": "^2.2.0",
     "egg-mongoose": "^2.1.1",
     "egg-scripts": "^2.1.0",
+    "egg-socket.io": "^4.1.6",
     "egg-swagger2": "^1.0.4",
     "egg-validate": "^1.0.0",
     "image-downloader": "^3.3.0",
@@ -35,7 +36,7 @@
   "scripts": {
     "start": "egg-scripts start --daemon",
     "stop": "egg-scripts stop",
-    "dev": "egg-bin dev",
+    "dev": "egg-bin dev --sticky",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
