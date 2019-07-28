@@ -6,7 +6,7 @@ module.exports = appInfo => {
 
   // add your config here
   // 加载 errorHandler 中间件
-  config.middleware = [ 'errorHandler' ]
+  config.middleware = [ 'errorHandler', 'eggLog' ]
 
   // 只对 /api 前缀的 url 路径生效
   // config.errorHandler = {
@@ -45,7 +45,7 @@ module.exports = appInfo => {
   }
 
   config.swagger2 = {
-    enable:true, // disable swagger , default true
+    enable: true, // disable swagger , default true
     base: {
       schemes: [
         'http',

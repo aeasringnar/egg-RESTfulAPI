@@ -1,9 +1,9 @@
 const moment = require('moment')
 
-// 格式化时间
+// 格式化时间的扩展
 exports.formatTime = time => moment(time).format('YYYY-MM-DD HH:mm:ss')
 
-// 处理成功响应
+// 格式化成功response的扩展
 exports.success = ({ ctx, res = null, msg = '请求成功' })=> {
   ctx.body = {
     code: 0,
